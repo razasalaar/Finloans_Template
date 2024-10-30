@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finloans - Business Loans</title>
+    <link rel="stylesheet" href="./css/faq.css" />
+  </head>
+  <body>
+    <section class="mainpage">
+    <header id="header" class="transparent-header">
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <img src="./image/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan.html">Loan</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="pages.html" class="dropbtn">Pages &#9662;</a>
+              <div class="dropdown-content">
+                <a href="apply.html">Apply Loan</a>
+                <a href="element.html">Elements</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Blog &#9662;</a>
+              <div class="dropdown-content">
+                <a href="blog.html">Blog Post 1</a>
+                <a href="blog1.html">Blog Post 2</a>
+              </div>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="Contact">
+            <a href="tel:+10673567367" style="color: white;">
+              <i class="fa fa-phone"  ></i> +10 673 567 367
+            </a></div>
+            <div class="contact-info">
+            <a href="apply.html" class="apply-btn">Apply For A Loan</a>
+          </div>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+      </div>
+      <section class="main-content">
+        <div class="left-content">
+          <h1>FAQ</h1>
+        </div>
+    </header>
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector(".nav-links");
+          navLinks.classList.toggle("active");
+        }
+      </script>
+  
+      <script>
+        document.querySelectorAll(".dropbtn").forEach(function (dropdown) {
+          dropdown.addEventListener("click", function (e) {
+            e.preventDefault();
+            const dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display =
+              dropdownContent.style.display === "block" ? "none" : "block";
+          });
+        });
+      </script>
+      <script>
+        window.addEventListener("scroll", function() {
+          const navbar = document.getElementById("navbar");
+          if (window.scrollY > 800) { // Adjust 50 to control when the color changes
+              navbar.classList.add("scrolled");
+          } else {
+              navbar.classList.remove("scrolled");
+          }
+      });
+      </script>
+    </body>
+</html>    

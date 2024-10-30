@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finloans - Business Loans</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <section class="mainpage">
+    <header id="header" class="transparent-header">
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <img src="./image/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan.html">Loan</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="pages.html" class="dropbtn">Pages &#9662;</a>
+              <div class="dropdown-content">
+                <a href="apply.html">Apply Loan</a>
+                <a href="element.html">Elements</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Blog &#9662;</a>
+              <div class="dropdown-content">
+                <a href="blog.html">Blog Post 1</a>
+                <a href="blog1.html">Blog Post 2</a>
+              </div>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="Contact">
+            <a href="tel:+10673567367" style="color: white;">
+              <i class="fa fa-phone"  ></i> +10 673 567 367
+            </a></div>
+            <div class="contact-info">
+            <a href="apply.html" class="apply-btn">Apply For A Loan</a>
+          </div>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+      </div>
+      <section class="main-content">
+        <div class="left-content">
+          <h1>Contact Us</h1>
+        </div>
+    </header>
+    </section>
+    <section class="get-in">
+      <div class="get-in-touch">
+        <div class="form-container">
+          <h2>Get in Touch</h2>
+          <form>
+            <textarea placeholder="Enter Message"></textarea>
+            <div class="form-row">
+              <input type="text" placeholder="Enter your name">
+              <input type="email" placeholder="Enter email address">
+            </div>
+            <input type="text" placeholder="Enter Subject">
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa fa-map-marker"></i>
+            <p><strong>Buttonwood, California.</strong><br>Rosemead, CA 91770</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-phone"></i>
+            <p><strong>00 (440) 9865 562</strong><br>Mon to Fri 9am to 6pm</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-envelope"></i>
+            <p><strong>support@colorlib.com</strong><br>Send us your query anytime!</p>
+          </div>
+        </div>
+      </div>  
+    </section>
+ <!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-wrapper">
+      <!-- Logo and Contact Information Column -->
+      <div class="footer-contact-column">
+          <div class="footer-logo">
+              <img src="./image/footer_logo.png" alt="Logo" class="footer-logo-img">
+          </div>
+          <p>finloan@support.com</p>
+          <p>+10 873 672 6782</p>
+          <p>600/D, Green road, NewYork</p>
+          <div class="footer-social-icons">
+              <a href="#"><img src="./image/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="./image/google.png" alt="Google"></a>
+              <a href="#"><img src="./image/twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="./image/instagram.png" alt="Instagram"></a>
+          </div>
+      </div>
+      
+      <!-- Services Column -->
+      <div class="footer-services-column">
+          <h3>Services</h3>
+          <ul>
+              <li><a href="#">SEO/SEM</a></li>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Digital marketing</a></li>
+          </ul>
+      </div>
+      
+      <!-- Useful Links Column -->
+      <div class="footer-links-column">
+          <h3>Useful Links</h3>
+          <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+          </ul>
+      </div>
+      
+      <!-- Subscribe Column -->
+      <div class="footer-subscribe-column">
+          <h3>Subscribe</h3>
+          <div class="footer-subscribe-box">
+              <input type="email" placeholder="Enter your mail">
+              <button>Subscribe</button>
+          </div>
+          <p>Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
+      </div>
+  </div>
+  <div class="footer-bottom-section">
+      <p>Copyright ©2024 All rights reserved | This template is made with ❤️ by Colorlib</p>
+  </div>
+</footer>
+
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector(".nav-links");
+          navLinks.classList.toggle("active");
+        }
+      </script>
+  
+      <script>
+        document.querySelectorAll(".dropbtn").forEach(function (dropdown) {
+          dropdown.addEventListener("click", function (e) {
+            e.preventDefault();
+            const dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display =
+              dropdownContent.style.display === "block" ? "none" : "block";
+          });
+        });
+      </script>
+      <script>
+        window.addEventListener("scroll", function() {
+          const navbar = document.getElementById("navbar");
+          if (window.scrollY > 800) { // Adjust 50 to control when the color changes
+              navbar.classList.add("scrolled");
+          } else {
+              navbar.classList.remove("scrolled");
+          }
+      });
+      </script>
+    </body>
+</html>    

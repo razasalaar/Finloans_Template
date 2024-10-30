@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finloans - Business Loans</title>
+    <link rel="stylesheet" href="./css/loan.css" />
+  </head>
+  <body>
+    <section class="mainpage">
+    <header id="header" class="transparent-header">
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <img src="./image/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan.html">Loan</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="pages.html" class="dropbtn">Pages &#9662;</a>
+              <div class="dropdown-content">
+                <a href="apply.html">Apply Loan</a>
+                <a href="element.html">Elements</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Blog &#9662;</a>
+              <div class="dropdown-content">
+                <a href="blog.html">Blog Post 1</a>
+                <a href="blog1.html">Blog Post 2</a>
+              </div>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="Contact">
+            <a href="tel:+10673567367" style="color: white;">
+              <i class="fa fa-phone"  ></i> +10 673 567 367
+            </a></div>
+            <div class="contact-info">
+            <a href="apply.html" class="apply-btn">Apply For A Loan</a>
+          </div>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+      </div>
+      <section class="main-content">
+        <div class="left-content">
+          <h1>Apply Loan</h1>
+        </div>
+    </header>
+    </section>
+    <section class="apply-now-section">
+      <div class="apply-now-form">
+          <h2>How much do you want?</h2>
+          <p>We provide online instant cash loans with quick approval that suit your term length</p>
+          
+          <form>
+              <input type="text" placeholder="Your name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="tel" placeholder="Phone no." required>
+              
+              <select required>
+                  <option value="" disabled selected>Purpose</option>
+                  <option value="personal">Personal</option>
+                  <option value="business">Business</option>
+                  <!-- Add more options as needed -->
+              </select>
+  
+              <select required>
+                  <option value="" disabled selected>Amount</option>
+                  <option value="500">$500</option>
+                  <option value="1000">$1000</option>
+                  <!-- Add more options as needed -->
+              </select>
+  
+              <select required>
+                  <option value="" disabled selected>Month</option>
+                  <option value="1">1 Month</option>
+                  <option value="3">3 Months</option>
+                  <!-- Add more options as needed -->
+              </select>
+  
+              <p class="payment-text">You have to pay: <span>$0</span></p>
+              
+              <textarea placeholder="Message" rows="4"></textarea>
+              
+              <button type="submit" class="apply-button">Apply Now</button>
+          </form>
+      </div>
+  </section>
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+      <!-- Logo and Contact Information Column -->
+      <div class="footer-column contact-info">
+          <div class="logo">
+            
+              <img src="./image/footer_logo.png" alt="Logo" class="logo-img">
+          </div>
+          <p>finloan@support.com</p>
+          <p>+10 873 672 6782</p>
+          <p>600/D, Green road, NewYork</p>
+          <div class="social-icons1">
+              <a href="#"><img src="./image/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="./image/google.png" alt="Google"></a>
+              <a href="#"><img src="./image/twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="./image/instagram.png" alt="Instagram"></a>
+          </div>
+      </div>
+      
+      <!-- Services Column -->
+      <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+              <li><a href="#">SEO/SEM</a></li>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Digital marketing</a></li>
+          </ul>
+      </div>
+      
+      <!-- Useful Links Column -->
+      <div class="footer-column">
+          <h3>Useful Links</h3>
+          <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+          </ul>
+      </div>
+      
+      <!-- Subscribe Column -->
+      <div class="footer-column subscribe">
+          <h3>Subscribe</h3>
+          <div class="subscribe-box">
+              <input type="email" placeholder="Enter your mail">
+              <button>Subscribe</button>
+          </div>
+          <p>Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Copyright ©2024 All rights reserved | This template is made with ❤️ by Colorlib</p>
+  </div>
+</footer>
+    <script>
+
+        function toggleMenu() {
+          const navLinks = document.querySelector(".nav-links");
+          navLinks.classList.toggle("active");
+        }
+      </script>
+  
+      <script>
+        document.querySelectorAll(".dropbtn").forEach(function (dropdown) {
+          dropdown.addEventListener("click", function (e) {
+            e.preventDefault();
+            const dropdownContent = this.nextElementSibling;
+            dropdownContent.style.display =
+              dropdownContent.style.display === "block" ? "none" : "block";
+          });
+        });
+      </script>
+      <script>
+        window.addEventListener("scroll", function() {
+          const navbar = document.getElementById("navbar");
+          if (window.scrollY > 800) { // Adjust 50 to control when the color changes
+              navbar.classList.add("scrolled");
+          } else {
+              navbar.classList.remove("scrolled");
+          }
+      });
+      </script>
+    </body>
+</html>    
